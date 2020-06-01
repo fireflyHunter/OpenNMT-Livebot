@@ -17,6 +17,7 @@ unzip livebot_source.zip
 cd preprocess_livebot
 python process.py
 python preprocess.py -train_src onmt_data/train_src.txt -train_tgt onmt_data/train_tgt.txt -valid_src onmt_data/valid_src.txt -valid_tgt onmt_data/valid_tgt.txt -save_data onmt_data/data
+python preprocess.py -train_src onmt_data/train_src.txt -train_tgt onmt_data/train_tgt.txt -valid_src onmt_data/test/test_src.txt -valid_tgt onmt_data/test/test_tgt.txt -save_data onmt_data/test/data
 ```
 
 ## Train
