@@ -7,7 +7,7 @@ This is a Re-implementation of the work [Livebot](https://arxiv.org/abs/1809.049
 * torchvision 0.4.2
 * jieba 0.42
 ## Download source 
-Download data through Google Drive [Link](https://drive.google.com/open?id=1oKyIg_UEyhzsptj4lJ8G1nI-fk7ZFlS_).
+Download text & visual data through Google Drive [Link](https://drive.google.com/open?id=1oKyIg_UEyhzsptj4lJ8G1nI-fk7ZFlS_).
 ```bash 
 unzip livebot_source.zip
 ```
