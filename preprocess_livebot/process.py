@@ -1,7 +1,7 @@
 import os, json, torch, jieba, string, random
-from preprocess_livebot.add_candidate import prepare_candidate
-from preprocess_livebot.text import get_danmu_list_with_time
-from preprocess_livebot.visual import build_resnet, get_resnet_feature
+from add_candidate import prepare_candidate
+from text import get_danmu_list_with_time
+from visual import build_resnet, get_resnet_feature
 import numpy as np
 
 MIN_DANMU_NUMBER = 0
@@ -245,6 +245,7 @@ if __name__ == "__main__":
     form_test_set(dev_source, os.path.join(onmt_data_dir,'dev_context.json'), num_context=5)
     form_test_set(test_source, os.path.join(onmt_data_dir,'test_context.json'), num_context=5)
 
-    prepare_onmt_train('train_context.json','dev_context.json', onmt_data_dir)
-    prepare_candidate("test_context.json", os.path.join(onmt_test_dir, 'test-candidate.json'))
+    prepare_onmt_train(os.path.join(onmt_data_dir, 'train_context.json'), os.path.join(onmt_data_dir,'dev_context.json'), onmt_data_dir)
+    prepare_candidate(os.path.join(onmt_data_dir,'test_context.json'), os.path.join(onmt_test_dir, 'test-candidate.json'))
     prepare_onmt_test(os.path.join(onmt_test_dir, 'test-candidate.json'), onmt_test_dir)
+
