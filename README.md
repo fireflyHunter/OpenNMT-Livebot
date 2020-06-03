@@ -11,6 +11,7 @@ Download text & visual data through Google Drive [Link](https://drive.google.com
 ```bash 
 unzip livebot_source.zip
 ```
+Alternatively you can choose to download the raw dataset though the link in the original github [repo](https://github.com/lancopku/livebot). 
 
 ## Data preprocessing
 ```bash 
