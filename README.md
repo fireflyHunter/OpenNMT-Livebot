@@ -1,7 +1,7 @@
 # OpenNMT-Livebot
 This is a re-implementation of the work [Livebot](https://arxiv.org/abs/1809.04938). For reference the originally implementation is [here](https://github.com/lancopku/livebot).
 
-The details of this re-implementation are reported in the paper:[Response to LiveBot: Generating Live Video Comments Based on Visual and Textual Contexts](https://arxiv.org/abs/2006.03022) 
+The details of this re-implementation are reported in the paper: [Response to LiveBot: Generating Live Video Comments Based on Visual and Textual Contexts](https://arxiv.org/abs/2006.03022) 
 ## Requirements
 * Python >= 3.6
 * Pytorch 1.3.1
