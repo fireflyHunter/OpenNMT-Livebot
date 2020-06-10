@@ -19,13 +19,13 @@ Alternatively you can choose to download the raw dataset though the link in the 
 cd preprocess_livebot
 python process.py
 cd ../
-python preprocess.py -train_src onmt_data/train_src.txt -train_tgt onmt_data/train_tgt.txt -valid_src onmt_data/valid_src.txt -valid_tgt onmt_data/valid_tgt.txt -save_data onmt_data/data
-python preprocess.py -train_src onmt_data/train_src.txt -train_tgt onmt_data/train_tgt.txt -valid_src onmt_data/test/test_src.txt -valid_tgt onmt_data/test/test_tgt.txt -save_data onmt_data/test/data
+python preprocess.py -train_src onmt_data/train_src.txt -train_tgt onmt_data/train_tgt.txt -valid_src onmt_data/valid_src.txt -valid_tgt onmt_data/valid_tgt.txt -save_data onmt_data/data -share_vocab -src_vocab_size 30000
+python preprocess.py -train_src onmt_data/train_src.txt -train_tgt onmt_data/train_tgt.txt -valid_src onmt_data/test/test_src.txt -valid_tgt onmt_data/test/test_tgt.txt -save_data onmt_data/test/data -share_vocab -src_vocab_size 30000
 ```
 
 ## Train
 ```bash 
-python train.py -mode train -visual_path visual/resnet18.pkl -data onmt_data/data -position_encoding -param_init_glorot -world_size 1 -gpu_ranks 0
+python train.py -mode train -visual_path visual/resnet18.pkl -data onmt_data/data -position_encoding -param_init_glorot -world_size 1 -gpu_ranks 0 
 ```
 Note:
 - Multiple GPU training current not supported.
