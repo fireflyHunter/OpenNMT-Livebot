@@ -8,7 +8,7 @@ The details of this re-implementation are reported in the paper: [Response to Li
 * torchvision 0.4.2
 
 ## Download source 
-Download text & visual data through Google Drive [Link](https://drive.google.com/open?id=1oKyIg_UEyhzsptj4lJ8G1nI-fk7ZFlS_).
+Download text & visual data through Google Drive [Link](https://drive.google.com/file/d/1oKyIg_UEyhzsptj4lJ8G1nI-fk7ZFlS_/view?usp=sharing).
 ```bash 
 unzip livebot_source.zip
 ```
